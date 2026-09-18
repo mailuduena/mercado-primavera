@@ -1,0 +1,6 @@
+{
+  "name": "Mercado Primavera",
+  "description": "Verdulería moderna en Argentina con estética fresca, editorial y de estación.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

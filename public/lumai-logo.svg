@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="100%" height="100%">
+  <defs>
+    <!-- Mask to cleanly cut globe lines behind the pencil and flower with transparent background -->
+    <mask id="globeCutMask">
+      <!-- White reveals everything -->
+      <rect width="500" height="500" fill="#FFFFFF" />
+      
+      <!-- Black cuts out the area where the pencil and flower sit, so lines do not pass behind them -->
+      <!-- Pencil body cut -->
+      <polygon points="180,345 235,230 455,100 480,135 315,315 210,360" fill="#000000" />
+      <!-- Flower cut -->
+      <circle cx="330" cy="320" r="48" fill="#000000" />
+    </mask>
+  </defs>
+
+  <g stroke="#FF1E8D" stroke-width="16" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <!-- 1. ORBITAL RING (Bottom Left) -->
+    <path d="M 170 415 C 95 445 35 410 32 365 C 28 320 62 290 80 270" />
+
+    <!-- 2. GLOBE WITH MASK (Lines cut cleanly behind pencil and flower) -->
+    <g mask="url(#globeCutMask)">
+      <!-- Outer Globe Circle -->
+      <circle cx="240" cy="260" r="175" />
+
+      <!-- Horizontal Equator -->
+      <line x1="65" y1="260" x2="415" y2="260" />
+
+      <!-- Upper Latitude -->
+      <path d="M 92 175 C 150 195 330 195 388 175" />
+
+      <!-- Lower Latitude -->
+      <path d="M 92 345 C 150 325 330 325 388 345" />
+
+      <!-- Vertical Center Meridian -->
+      <line x1="240" y1="85" x2="240" y2="435" />
+
+      <!-- Left Longitude Arc -->
+      <path d="M 240 85 C 140 120 140 400 240 435" />
+
+      <!-- Right Longitude Arc -->
+      <path d="M 240 85 C 340 120 340 400 240 435" />
+    </g>
+
+    <!-- 3. PENCIL -->
+    <!-- Eraser Top Dome -->
+    <path d="M 390 100 C 410 80 445 80 465 100 C 485 120 485 155 465 175" />
+    
+    <!-- Ferrule Band 1 -->
+    <line x1="390" y1="100" x2="465" y2="175" />
+    
+    <!-- Ferrule Band 2 -->
+    <line x1="372" y1="118" x2="447" y2="193" />
+
+    <!-- Pencil Shaft Outer Parallel Edges -->
+    <line x1="372" y1="118" x2="252" y2="238" />
+    <line x1="447" y1="193" x2="327" y2="313" />
+
+    <!-- Sharpened Wood Section (Tapering to point) -->
+    <line x1="252" y1="238" x2="198" y2="338" />
+    <line x1="327" y1="313" x2="198" y2="338" />
+
+    <!-- Boundary between painted body and wood (Scalloped / Heart shape) -->
+    <path d="M 252 238 C 272 268 258 290 242 298 L 222 318 C 235 328 260 338 327 313" />
+
+    <!-- Graphite Lead Tip Line -->
+    <path d="M 215 320 L 228 328" />
+
+    <!-- 4. SAKURA / CHERRY BLOSSOM FLOWER -->
+    <!-- Center small ring -->
+    <circle cx="330" cy="320" r="8" />
+
+    <!-- Five notched petals -->
+    <!-- Petal 1 (Top) -->
+    <path d="M 326 312 C 322 298 326 288 333 288 C 336 290 338 293 338 290 C 342 288 348 294 345 306 C 342 312 336 315 334 313" />
+    
+    <!-- Petal 2 (Top Right) -->
+    <path d="M 336 316 C 348 312 358 315 362 320 C 362 323 359 324 362 326 C 365 328 362 336 352 336 C 344 336 338 328 337 325" />
+    
+    <!-- Petal 3 (Bottom Right) -->
+    <path d="M 334 326 C 340 336 340 348 335 352 C 332 352 330 349 328 351 C 326 354 318 352 318 342 C 318 334 325 328 328 326" />
+    
+    <!-- Petal 4 (Bottom Left) -->
+    <path d="M 324 324 C 314 332 302 332 298 326 C 298 322 301 320 299 318 C 296 316 298 308 308 308 C 316 308 322 316 323 319" />
+    
+    <!-- Petal 5 (Top Left) -->
+    <path d="M 325 316 C 318 306 318 294 324 290 C 326 290 328 293 330 291 C 332 288 340 290 338 300 C 336 308 328 314 326 316" />
+  </g>
+</svg>

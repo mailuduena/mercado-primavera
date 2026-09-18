@@ -1,0 +1,59 @@
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Fraunces", Georgia, serif;
+  --font-display: "Bricolage Grotesque", system-ui, sans-serif;
+  --font-sans: "DM Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+
+  --color-crema: #FFF8ED;
+  --color-durazno: #F6B7A9;
+  --color-manteca: #F6D96B;
+  --color-pistacho: #A8C98D;
+  --color-verde: #315C4D;
+  --color-lila: #C9B8E8;
+  --color-tomate: #E95B4E;
+  --color-oscuro: #26332D;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-family: var(--font-sans);
+  background-color: #FFF8ED;
+  color: #26332D;
+}
+
+/* Botanical and organic utilities */
+.font-display {
+  font-family: var(--font-display);
+}
+
+.font-serif-title {
+  font-family: var(--font-serif);
+}
+
+.font-body {
+  font-family: var(--font-sans);
+}
+
+/* Custom organic blob shapes */
+.rounded-organic-1 {
+  border-radius: 42% 58% 70% 30% / 45% 45% 55% 55%;
+}
+
+.rounded-organic-2 {
+  border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+}
+
+.rounded-organic-leaf {
+  border-radius: 60px 4px 60px 4px;
+}
+
+.rounded-organic-pill {
+  border-radius: 9999px;
+}
+
+/* Custom subtle pattern background */
+.bg-grid-subtle {
+  background-image: radial-gradient(#315C4D 0.75px, transparent 0.75px);
+  background-size: 24px 24px;
+}
