@@ -202,7 +202,7 @@ export const Home: React.FC<HomeProps> = ({ onNavigate, onOpenLocationModal }) =
       {/* ========================================================================= */}
       <section
         id="hero-section"
-        className="relative pt-12 sm:pt-16 lg:pt-20 pb-16 sm:pb-24 lg:pb-32 bg-[#FFF8ED] overflow-hidden"
+        className="relative pt-8 sm:pt-12 lg:pt-14 pb-6 sm:pb-8 lg:pb-10 bg-[#FFF8ED] overflow-hidden"
       >
         {/* Soft Organic Atmospheric Glows */}
         <div className="absolute top-6 right-[-8%] w-[28rem] h-[28rem] bg-[#F6B7A9]/20 rounded-full blur-3xl pointer-events-none -z-10" />
@@ -210,9 +210,9 @@ export const Home: React.FC<HomeProps> = ({ onNavigate, onOpenLocationModal }) =
         <div className="absolute bottom-6 right-1/4 w-80 h-80 bg-[#F6D96B]/25 rounded-full blur-2xl pointer-events-none -z-10" />
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid lg:grid-cols-12 gap-12 lg:gap-14 items-center">
+          <div className="grid lg:grid-cols-12 gap-8 lg:gap-12 items-center">
             {/* Left Content Column */}
-            <div className="lg:col-span-6 space-y-6 sm:space-y-8 z-10">
+            <div className="lg:col-span-6 space-y-5 sm:space-y-6 z-10">
               {/* Organic Eyebrow with Tomato Accent */}
               <div className="inline-flex items-center gap-2.5 px-4 py-1.5 rounded-full bg-[#315C4D]/10 text-[#315C4D] text-xs sm:text-sm font-semibold tracking-wide border border-[#315C4D]/15 shadow-2xs">
                 <TomatoIcon className="w-4 h-4 shrink-0" />
@@ -241,7 +241,7 @@ export const Home: React.FC<HomeProps> = ({ onNavigate, onOpenLocationModal }) =
               </h1>
 
               {/* Texto principal & complementario */}
-              <div className="space-y-3.5 max-w-xl">
+              <div className="space-y-2.5 sm:space-y-3 max-w-xl">
                 <p className="text-xl sm:text-2xl text-[#26332D] font-medium leading-relaxed font-display">
                   Frutas, verduras y sabores que conocés. Y otros que quizás todavía no.
                 </p>
@@ -251,7 +251,7 @@ export const Home: React.FC<HomeProps> = ({ onNavigate, onOpenLocationModal }) =
               </div>
 
               {/* Botones de acción */}
-              <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3.5 pt-2 sm:pt-3 pb-2 sm:pb-4">
+              <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3.5 pt-1 sm:pt-2">
                 <button
                   id="hero-descubri-variedad-btn"
                   onClick={() => scrollToSection('seccion-productos')}
@@ -297,12 +297,12 @@ export const Home: React.FC<HomeProps> = ({ onNavigate, onOpenLocationModal }) =
             </div>
           </div>
 
-          {/* Franja horizontal de beneficios de apoyo (Secundarios, equilibrados, sin competir con los CTA principales) */}
+          {/* Franja horizontal de beneficios de apoyo (Secundarios, compacta, centrada, sin altura forzada) */}
           <div
             id="hero-beneficios-franja"
-            className="mt-14 sm:mt-18 lg:mt-24 pt-7 sm:pt-9 border-t border-[#E8D7C0]/70"
+            className="mt-6 sm:mt-8 lg:mt-9 pt-4 sm:pt-5 border-t border-[#E8D7C0]/70"
           >
-            <div className="grid grid-cols-1 sm:grid-cols-3 gap-3.5 sm:gap-6 lg:gap-8 items-center">
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-3.5 sm:gap-6 lg:gap-8 items-center py-1">
               {/* Beneficio 1 */}
               <div className="flex items-center justify-center gap-2.5 text-xs sm:text-sm text-[#26332D]/75 font-sans">
                 <Scale className="w-4 h-4 text-[#315C4D] shrink-0" />
@@ -330,7 +330,7 @@ export const Home: React.FC<HomeProps> = ({ onNavigate, onOpenLocationModal }) =
       {/* ========================================================================= */}
       <section
         id="seccion-presentacion"
-        className="py-20 sm:py-28 bg-[#EDF5E7] border-y border-[#A8C98D]/40 relative overflow-hidden"
+        className="py-12 sm:py-16 bg-[#EDF5E7] border-y border-[#A8C98D]/40 relative overflow-hidden"
       >
         {/* Subtle leaf watermark */}
         <div className="absolute -right-16 top-10 opacity-10 pointer-events-none">
@@ -737,7 +737,7 @@ export const Home: React.FC<HomeProps> = ({ onNavigate, onOpenLocationModal }) =
       {/* ========================================================================= */}
       <section
         id="seccion-como-funciona"
-        className="pt-4 sm:pt-5 lg:pt-6 pb-16 sm:pb-20 lg:pb-24 bg-[#FFF8ED] relative overflow-hidden"
+        className="pt-4 sm:pt-5 lg:pt-6 pb-6 sm:pb-8 lg:pb-10 bg-[#FFF8ED] relative overflow-hidden"
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           {/* Header */}
@@ -1103,7 +1103,7 @@ export const Home: React.FC<HomeProps> = ({ onNavigate, onOpenLocationModal }) =
       {/* ========================================================================= */}
       <section
         id="seccion-cta"
-        className="py-20 sm:py-28 bg-[#F6B7A9] border-t border-[#e29e8e] relative overflow-hidden text-[#26332D]"
+        className="pt-8 sm:pt-10 lg:pt-12 pb-12 sm:pb-16 lg:pb-20 bg-[#F6B7A9] border-t border-[#e29e8e] relative overflow-hidden text-[#26332D]"
       >
         {/* Formas orgánicas y resplandores de fondo */}
         <div className="absolute -top-12 -left-12 w-56 h-56 rounded-full bg-[#F6D96B]/50 blur-xl pointer-events-none" />
@@ -1114,7 +1114,7 @@ export const Home: React.FC<HomeProps> = ({ onNavigate, onOpenLocationModal }) =
         {/* ============================================================== */}
 
         {/* 1. Tomate fresco de huerta (arriba izquierda - margen seguro >= 24px) */}
-        <div className="absolute top-4 sm:top-8 lg:top-10 left-4 sm:left-8 lg:left-12 xl:left-16 z-0 pointer-events-none select-none">
+        <div className="absolute top-3 sm:top-5 lg:top-6 left-4 sm:left-8 lg:left-12 xl:left-16 z-0 pointer-events-none select-none">
           <div className="w-14 h-[37px] sm:w-24 sm:h-16 md:w-36 md:h-24 lg:w-44 lg:h-[117px] xl:w-52 xl:h-[138px] drop-shadow-sm sm:drop-shadow-md transform -rotate-2 transition-transform duration-500">
             <img
               src="/cta-tomate.png"
@@ -1127,7 +1127,7 @@ export const Home: React.FC<HomeProps> = ({ onNavigate, onOpenLocationModal }) =
         </div>
 
         {/* 2. Cítrico fresco (arriba derecha - margen seguro >= 24px) */}
-        <div className="absolute top-4 sm:top-8 lg:top-10 right-4 sm:right-8 lg:right-12 xl:right-16 z-0 pointer-events-none select-none">
+        <div className="absolute top-3 sm:top-5 lg:top-6 right-4 sm:right-8 lg:right-12 xl:right-16 z-0 pointer-events-none select-none">
           <div className="w-14 h-[37px] sm:w-24 sm:h-16 md:w-36 md:h-24 lg:w-44 lg:h-[117px] xl:w-52 xl:h-[138px] drop-shadow-sm sm:drop-shadow-md transform rotate-3 transition-transform duration-500">
             <img
               src="/cta-citrico.png"
